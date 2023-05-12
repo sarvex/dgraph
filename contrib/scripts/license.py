@@ -22,13 +22,12 @@ notice = """
 
 def addCopyright(file):
     print("Add copyright to", file)
-    f = open(file, "r+")
-    lines = f.readlines()
-    lines.insert(0, notice)
-    f.seek(0)
-    for l in lines:
-        f.write(l)
-    f.close()
+    with open(file, "r+") as f:
+        lines = f.readlines()
+        lines.insert(0, notice)
+        f.seek(0)
+        for l in lines:
+            f.write(l)
 
 def update(file):
     f = open(file, "r")
