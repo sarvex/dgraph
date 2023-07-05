@@ -9,6 +9,6 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.8.1
-	google.golang.org/grpc v1.38.0
+	google.golang.org/grpc v1.53.0
 	k8s.io/klog/v2 v2.10.0
 )
